@@ -17,4 +17,5 @@ jobs:
         mkdir /opt/mothership/myhome/releases/${{ github.run_number }}
         cp -r * /opt/mothership/myhome/releases/${{ github.run_number }}
         cd /opt/mothership/myhome/
-        ln -sf releases/${{ github.run_number }} current
+        rm -rf current
+        ln -s releases/${{ github.run_number }} current
