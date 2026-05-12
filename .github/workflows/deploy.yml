@@ -14,7 +14,7 @@ jobs:
 
     - name: Copy files
       run: |
-        mkdir /opt/mothership/my_home/${{ github.run_number }}
-        cp * /opt/mothership/my_home/releases/${{ github.run_number }}
-        cd /opt/mothership/my_home/
+        mkdir /opt/mothership/myhome/releases/${{ github.run_number }}
+        cp * /opt/mothership/myhome/releases/${{ github.run_number }}
+        cd /opt/mothership/myhome/
         ln -s releases/${{ github.run_number }} current
