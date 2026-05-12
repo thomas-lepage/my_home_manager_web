@@ -19,3 +19,4 @@ jobs:
         cd /opt/mothership/myhome/
         rm -rf current
         ln -s releases/${{ github.run_number }} current
+        docker compose restart
